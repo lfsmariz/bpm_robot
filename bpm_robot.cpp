@@ -30,7 +30,7 @@ void empty_canvas(char tmpcanv[], int tmp_size)
 int main()
 {
     std::ifstream infile;
-    infile.open("exemplo1.txt");
+    infile.open("name.txt");
 
     if (infile.fail())
     {
@@ -159,10 +159,10 @@ int main()
     }    
 
 
-    std::ofstream out_bpm ("exemplo3.bpm", std::ofstream::out);
+    std::ofstream out_bpm ("name.bpm", std::ofstream::out);
 
     out_bpm << "P1 \n";
-    out_bpm << "#meuovo \n";
+    out_bpm << "#LuizFilipe \n";
     out_bpm << sample.axis_x << " " << sample.axis_y << " ";
 
     for (int i = 0; i < tmp_size; i++)
